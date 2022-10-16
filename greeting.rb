@@ -1,5 +1,20 @@
-def greeting(name)
-  name
+# def greeting(name)
+# print "Hello " + name
+# end
+
+# puts greeting("John")
+
+def space_out_letters(person)
+  return person.split("").join(" ")
 end
 
-puts greeting("John")
+def greet(person)
+  return "H e l l o, " + space_out_letters(person)
+end
+
+def decorate_greeting(person)
+  puts "" + greet(person) + ""
+end
+
+decorate_greeting("John")
+decorate_greeting(1)
